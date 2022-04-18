@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+body {
+  font-family: "PT Sans", sans-serif;
+  overflow-x: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-weight: 700;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tickImage{
+  min-height: 60vh;
+  align-items: center;
   display: flex;
-  flex-direction: column;
+}
+.footerList li{
+  font-size: 18px;
+
+}
+.tickImage img {
+  width: 30px;
+  margin: auto 10px;
+  height: 30px;
+}
+.tickImage p {
+  font-size: 20px;
+  margin: auto 0;
+}
+.diagonalImage {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.diagonalImage img {
+  height: 100%;
+  object-fit: cover;
+position: absolute;
+bottom: 0;
+  z-index: -100;
+  right: 0;
+}
+.section5-container {
+  background: #0b121c;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section6-button button {
+  border: none;
+  outline: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 0.5rem 1rem;
+  background-color: #00beff;
+  color: black;
+  font-weight: bold;
+}
+.customFooter p {
+  font-size: 18px;
+}
+.underLine {
+  height: 3px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 190, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1000px) {
+  .customCarousel img {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+  .footerSocialContainer{
+    justify-content: center !important;
+  }
+  .footerUnderLink a{
+    font-size: 12px;
+
   }
 }
