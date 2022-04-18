@@ -38,6 +38,17 @@ h1 {
   justify-content: center;
   flex-direction: column;
 }
+.ssl{
+  height: 50px;
+  margin: auto 0;
+  object-fit: contain;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+  /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+  image-rendering: -webkit-optimize-contrast;
+}
 .diagonalImage img {
   height: 100%;
   object-fit: cover;
@@ -79,6 +90,9 @@ bottom: 0;
     rgba(255, 255, 255, 1) 100%
   );
 }
+.Disclosures{
+  width: 70% !important;
+}
 
 @media screen and (max-width: 1000px) {
   .customCarousel img {
@@ -90,5 +104,11 @@ bottom: 0;
   .footerUnderLink a{
     font-size: 12px;
 
+  }
+  .Disclosures{
+    width: 100% !important;
+  }
+  .sslcontainer{
+    margin-top: 2rem;
   }
 }
