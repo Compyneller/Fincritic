@@ -36,7 +36,10 @@ const FooterBrand = ({ selectCountry }) => {
         </div>
         <div className="col-12 col-lg-4 d-flex justify-content-center my-auto text-center">
           <div className="d-flex w-50 jutify-content-around section4Socials mt-5 mt-lg-0">
-            <a target="_blank" href=" https://twitter.com/FincriticIndia">
+            <a
+              target="_blank"
+              href="https://mobile.twitter.com/fincriticpvtltd"
+            >
               <i className="fa-brands fa-twitter-square"></i>
             </a>
             <a target="_blank" href="https://medium.com/@FINCRITIC">

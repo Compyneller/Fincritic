@@ -85,7 +85,7 @@ const NavBar = ({ setSelectCountry, selectCountry }) => {
               Platform
             </li>
           </a>
-          <a href=" https://twitter.com/FincriticIndia" target="_blank">
+          <a href="https://mobile.twitter.com/fincriticpvtltd" target="_blank">
             <i
               className="fa-brands fa-twitter-square"
               onClick={() => setToggleNav({ active: false })}
